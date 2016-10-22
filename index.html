@@ -16,9 +16,9 @@
             SIT <span class='strong'>ON</span> CHAIR
          </a>
 
-         <div id='main_menu'>
+         <div id='main__menu'>
             <a href=''>O FIRMIE</a>
-            <div class='main_menu_sub'>
+            <div class='main__menu__sub'>
                <div class='triangle'></div>
 
                <a href=''>Aktualności</a>
@@ -35,23 +35,23 @@
    </header>
 
    <section id='slider'>
-      <div class='container' id='slider_container'>
+      <div class='container' id='slider__container'>
 
-         <div id='slider_left'>
+         <div id='slider__left'>
             <a href=' '><h2 class='strong'><</h2></a>
          </div>
-         <img src='images/black_chair.png' id='slider_image'>
+         <img src='images/black_chair.png' id='slider__image'>
 
 
-         <div id='slider_text'>
+         <div id='slider__text'>
             <h1>SIT <span class='strong'>ON </span>OUR <span class='strong'>CHAIR</span></h1>
             <p>
                Id labore do occaecat labore proident non veniam quis deserunt consequat culpa et.Labore culpa est exercitation velit voluptate nisi Lorem qui sunt adipisicing.
                Irure elit culpa amet duis excepteur fugiat laboris exercitation velit non laboris commodo Lorem.Elit minim cupidatat culpa sit occaecat aute irure ad labore enim id.
             </p>
-            <a href=' ' id="slider_text_button">ZOBACZ WIĘCEJ</a>
+            <a href=' ' id="slider__text__button">ZOBACZ WIĘCEJ</a>
          </div>
-         <div id='slider_right'>
+         <div id='slider__right'>
             <a href=' '><h2 class='strong'>></h2></a>
          </div>
 
@@ -64,19 +64,19 @@
    <section id='chairs'>
       <div class='container'>
 
-         <div id='chairs_container_1' class="chairs_container">
+         <div id='chairs__container__1' class="chairs__container">
             <div>
                <h1> Chair CLAIR</h1>
             </div>
          </div>
 
-         <div id='chairs_container_2' class="chairs_container">
+         <div id='chairs__container__2' class="chairs__container">
             <div>
                <h1> Chair MARGARITA</h1>
             </div>
          </div>
 
-         <div id='chairs_container_3' class="chairs_container">
+         <div id='chairs__container__3' class="chairs__container">
             <h1>Finds all inputs</h1>
             <p>
                Pariatur adipisicing reprehenderit fugiat culpa dolor laboris excepteur enim Lorem ullamco proident ad.Ut exercitation velit dolore aute fugiat non esse.
@@ -93,15 +93,15 @@
 
    <section id='pricelist'>
       <div class='container'>
-         <div class='section_title'>
+         <div class='section__title'>
             <span>CENNIK</span>
          </div>
-         <div class='container' id='pricelist_container'>
+         <div class='container' id='pricelist__container'>
 
-            <article class='pricelist_container_article'>
-               <div class='pricelist_container_article_circle'></div>
+            <article class='pricelist__container__article'>
+               <div class='pricelist__container__article__circle'></div>
                <span>BASIC PLAN</span>
-               <div class='pricelist_container_article_price'>
+               <div class='pricelist__container__article__price'>
                   <div>
                      <strong>85<sup>99</sup></strong>
                   </div>
@@ -109,12 +109,17 @@
                      PLN/MSC
                   </div>
                </div>
+               <div class='pricelist__container__article__description'>
+                  <div>Zakup towaru + dowóz</div>
+                  <div>Serwis</div>
+               </div>
+               <a href=' '>DOŁĄCZ</a>
             </article>
 
-            <article class='pricelist_container_article'>
-               <div class='pricelist_container_article_circle'></div>
+            <article class='pricelist__container__article'>
+               <div class='pricelist__container__article__circle'></div>
                <span>STANDARD PLAN</span>
-               <div class='pricelist_container_article_price'>
+               <div class='pricelist__container__article__price'>
                   <div>
                      <strong>95<sup>99</sup></strong>
                   </div>
@@ -122,12 +127,18 @@
                      PLN/MSC
                   </div>
                </div>
+               <div class='pricelist__container__article__description'>
+                  <div>Zakup towaru + dowóz</div>
+                  <div>Serwis</div>
+                  <div>Gwarancja 5 lat</div>
+               </div>
+               <a href=' '>DOŁĄCZ</a>
             </article>
 
-            <article class='pricelist_container_article'>
-               <div class='pricelist_container_article_circle'></div>
+            <article class='pricelist__container__article'>
+               <div class='pricelist__container__article__circle'></div>
                <span>ADVANCED PLAN</span>
-               <div class='pricelist_container_article_price'>
+               <div class='pricelist__container__article__price'>
                   <div>
                      <strong>211<sup>99</sup></strong>
                   </div>
@@ -135,6 +146,15 @@
                      PLN/MSC
                   </div>
                </div>
+
+               <div class='pricelist__container__article__description'>
+                  <div>Zakup towaru + dowóz</div>
+                  <div>Serwis</div>
+                  <div>Gwarancja 5 lat</div>
+                  <div>Porady projektanta</div>
+
+               </div>
+               <a href=' '>DOŁĄCZ</a>
             </article>
 
          </div>
@@ -145,17 +165,56 @@
 
    <section id='contact'>
       <div class='container'>
-         <div class='section_title'>
+         <div class='section__title'>
             <span>KONTAKT</span>
          </div>
-         <div class='container'>
+         <form class='container' id='contact__container'>
 
-         </div>
+
+            <div class="left">
+               <input type='text' placeholder="Imię" />
+               <input type ='email' placeholder="e-mail" />
+               <textarea placeholder="Wiadomość"></textarea>
+
+            </div>
+
+            <div class="right">
+               <img src="images/red_chair.png" />
+               <div>
+                  <input id='agreement' type='checkbox' />
+                  <label for='agreement'><span></span>Zgadzam się na przetwarzanie<br /> danych osobowych</label>
+               </div>
+               <input type='submit' value='WYŚLIJ'/>
+
+            </div>
+
+
+         </form>
 
       </div>
    </section>
 
+   <footer class='container'>
 
+      <div class='left' id='footer__copyright'>
+         Copyright 2014 | All rights reserved. - Sit On Chair
+
+      </div>
+
+      <div class='right'>
+         <div class="left" id='footer__images'>
+            <img src='images/flickr.png' />
+            <img src='images/vimeo.png' />
+            <img src='images/pinterest.png' />
+            <img src='images/twitter.png' />
+         </div>
+         <div id='footer__logo' class='right'>
+            SIT <strong>ON</strong> CHAIR
+         </div>
+
+      </div>
+
+   </footer>
 
 
 
