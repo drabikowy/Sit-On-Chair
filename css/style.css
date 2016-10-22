@@ -1,186 +1,342 @@
-/*Global*/
+/*.................................Global.................................*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
-  font-family: 'Raleway';
-  box-sizing: border-box;
+   font-family: 'Raleway';
+   box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
+   text-decoration: none;
+   color:inherit;
 }
 .container {
-  margin: 0 auto;
-  width: 1200px;
-  height: auto;
-  background-color: white;
-}
-.clearfix {
-  clear: both;
+   margin: 0 auto;
+   width: 1200px;
+   height: auto;
+   background-color: white;
 }
 
+
 .left{
-  float:left;
+   float:left;
 }
 
 .right{
-  float:right;
+   float:right;
 }
 body {
-  background-color: #010403;
+   background-color: #010403;
 }
 
 header, section, footer {
-  width: 100%;
-  clear:both;
+   width: 100%;
+   clear:both;
+}
+section::after {
+      content:' ';
+      clear: both;
 }
 .strong{
-  color: #23CBB0;
+   color: rgb(39, 199, 171);
 }
 
 
 
 /*HEADER*/
 header, header a {
-  color:white;
-  height: 35px;
+   color:white;
+   height: 35px;
 
 }
 
 nav#menu{
-  background-color:inherit;
+   background-color:inherit;
 }
 
 
 
 
-/*MENU*/
+/*.................................MENU.................................*/
 #logo{
-  float:left;
-  margin-left: 50px;
-  margin-top: 6px;
+   float:left;
+   margin-left: 50px;
+   margin-top: 6px;
 }
 
 #main_menu {
-  float: right;
-  margin-right: 50px;
-  margin-top: 6px;
-  position: relative;
+   float: right;
+   margin-right: 50px;
+   margin-top: 6px;
+   position: relative;
 }
 #main_menu>a {
-  margin-left: 40px;
-  float: left;
+   margin-left: 40px;
+   float: left;
 }
 
 .main_menu_sub {
-  display:none;
-  position: absolute;
-  top: 50px;
-  left: 10px;
-  width: 130px;
-  background-color: black;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid grey;
+   display:none;
+   position: absolute;
+   top: 50px;
+   left: 10px;
+   width: 130px;
+   background-color: black;
+   padding: 10px;
+   text-align: center;
+   border-bottom: 1px solid grey;
 }
 .main_menu_sub>a {
-  display:block;
+   display:block;
 }
 
 .triangle {
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 20px solid black;
-  position:relative;
-  left:46px;
-  top: -25px;
+   width: 0;
+   height: 0;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 20px solid black;
+   position:relative;
+   left:46px;
+   top: -25px;
 }
 
 #main_menu:hover .main_menu_sub {
-  display:block;
+   display:block;
 
 }
 
 
 
 
-/*SLIDER*/
+/*.................................SLIDER.................................*/
 #slider_container{
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,247,250,1) 43%, rgba(235,235,235,1) 67%, rgba(204,202,204,1) 96%, rgba(204,202,204,1) 100%);
-  height: 500px;
+   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,247,250,1) 43%, rgba(235,235,235,1) 67%, rgba(204,202,204,1) 96%, rgba(204,202,204,1) 100%);
+   height: 500px;
 
 }
 
 #slider_image {
-  display:block;
-  float:left;
-  margin-top: 50px;
-  width: 600px;
+   display:block;
+   float:left;
+   margin-top: 50px;
+   width: 600px;
 }
 
 #slider_text {
-  float: left;
-  width: 350px;
-  text-align: center;
-  margin-top: 90px;
-  height: auto;
+   float: left;
+   width: 350px;
+   text-align: center;
+   margin-top: 90px;
+   height: auto;
 
 }
 #slider_text_button {
-  background-color: #23CBB0;
-  color: white;
-  padding: 10px 20px 10px;
-  border-radius: 5px;
-  display: inline-block;
+   background-color: rgb(39, 199, 171);
+   color: white;
+   padding: 10px 20px 10px;
+   border-radius: 5px;
+   display: inline-block;
 }
 
 #slider_container h2 {
-  font-weight: bold;
-  font-size: 70px;
-  text-decoration: none;
+   font-weight: bold;
+   font-size: 70px;
+   text-decoration: none;
 }
 #slider_container h1{
-  font-size:35px;
+   font-size:35px;
 }
 
 #slider_left, #slider_right {
-  width: 8%;
-  margin-top: 130px;
+   width: 8%;
+   margin-top: 130px;
 }
 #slider_left{
-  float:left;
-  text-align: right;
+   float:left;
+   text-align: right;
 }
 #slider_right{
-  float:right;
-  text-align: left;
+   float:right;
+   text-align: left;
 
 }
 
-/*SECTION with chairs*/
-.section_chairs_container {
-  padding: 40px 60px 60px 60px;
-  height:300px;
+/*..............................SECTION chairs and section PRICELIST..........................*/
+section#chairs > div{
+   height: 400px;
+   padding: 40px 60px 40px 60px;
 
-}
-.section_chairs_container > div {
-  width: 31%;
-  margin: 0 10px 0 10px;
-  display:inline-block;
-  height:230px;
-  border: 1px solid lightgrey;
+   display:flex;
+   justify-content: center;                                        /*TUTAJ*/
 }
 
-#section_chairs_container_1 {
-  background: url('../images/box1_img.jpg') center/ cover no-repeat white;
-}
-#section_chairs_container_2 {
-  background: url('../images/box2_img.jpg') center / cover no-repeat white;
-}
-#section_chairs_container_3 {
-  height: 260px;
-  top:0;
+.chairs_container, .pricelist_container_article{
+   width: 340px;                                                  /*TUTAJ*/
+   border: 1px solid lightgrey;
+   display:inline-block;
+   height: 229px;
+   position:relative;
 
 }
+
+
+/*................................CHAIRS..............................*/
+#chairs_container_1 {
+   background: url('../images/box1_img.jpg') center/ cover no-repeat white;
+}
+#chairs_container_2 {
+   background: url('../images/box2_img.jpg') center / cover no-repeat white;
+   margin: 0 40px 0 40px;
+}
+#chairs_container_3 {
+   height: 280px;
+   padding: 10px 10px 10px 10px;
+   overflow-y:auto;
+}
+
+div#chairs_container_1 > div, div#chairs_container_2 > div {
+   position: relative;
+   top: 60%;
+   background-color: rgba(255,255,255,.4);
+   height: 65px;
+   width:100%;
+}
+div.chairs_container h1 {
+   position: absolute;
+   font-size: 16px;
+   display: block;
+   border-bottom: 8px solid rgb(39, 199, 171) ;
+   width: 45%;
+   margin: 18px 0 0 15px;
+
+
+}
+div#chairs_container_3 > h1 {
+   position: static;
+}
+div#chairs_container_3 > p {
+   margin: 20px 18px 0 15px;
+   font-size: 14px;
+   line-height: 1.5;
+   color: grey;
+}
+
+/*.................................PRICELIST.................................*/
+
+section#pricelist > div.container {
+   background-color: rgb(241,241,241);
+   height: 700px;
+}
+
+#pricelist_container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding: 40px 60px 40px 60px;
+   background-color: inherit;
+   height: auto;                                                           /*Tutaj*/
+   margin-top: 20px;
+}
+article:nth-of-type(2).pricelist_container_article {
+   margin: 0 40px 0 40px;
+}
+
+.pricelist_container_article {
+   height: 500px;
+   position: relative;
+   border: 2px solid rgb(213,213,213);
+   background-color: rgb(249,249,249);
+   display: flex;                                                       /* TUTAJ */
+   flex-direction: column;
+   align-items: center;
+}
+
+.pricelist_container_article_circle {
+   width: 70px;
+   height: 70px;
+   position: absolute;
+   right: 135px;
+   top: -46px;
+   border-radius: 50%;
+   box-shadow: 0 0 0 17px white inset;
+   background-color: rgb(194,194,194);
+   border: 2px solid rgb(213,213,213);
+}
+
+
+.pricelist_container_article span {
+   display:block;
+   text-align: center;
+   margin-top: 40px;
+   font-size: 25px;
+   color: rgb(39, 199, 171);
+   font-weight: 500;
+}
+
+.pricelist_container_article_price {
+   display:block;
+   width: 130px;
+   height: 130px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 30px;
+
+   border-radius: 50%;
+   border: 2px solid rgb(213,213,213);
+
+   font-size:16px;
+   font-weight: 600;
+   color: rgb(194,194,194);
+   background-color: white;
+}
+
+.pricelist_container_article_price strong {
+   display: block;
+   margin-bottom: 5px;
+
+   font-size: 40px;
+   font-weight: 600;
+
+}
+
+.pricelist_container_article_price sup {
+   position: relative;
+   top: -10px;
+
+   font-size: 16px;
+}
+
+.pricelist_container_article_description {
+   
+}
+
+
+/*................section TITLE......................*/
+.section_title {
+   position: relative;
+   height: 100px;
+}
+
+.section_title > span {
+   display: block;
+   width: 340px;
+   position:absolute;
+   margin: 30px 0 30px 60px;
+   border-bottom: 8px solid rgb(39, 199, 171);
+   padding-bottom: 5px;
+
+   font-size: 24px;
+   color:grey;
+
+
+
+}
+
+/*........................CONTACT.........................*/
+
+section#contact > div.container {
+   background-color: white;
+   height: 500px;
