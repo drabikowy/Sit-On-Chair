@@ -88,6 +88,10 @@ nav#menu{
 }
 .main__menu__sub>a {
    display:block;
+   text-align: center;
+   padding-top: 6px;
+   border-radius: 3px;
+
 }
 
 .triangle {
@@ -106,6 +110,11 @@ nav#menu{
 
 }
 
+/*........................................MENU HOVER EFFECTS...............*/
+
+.main__menu__sub a:hover {
+   background-color: rgb(39, 199, 171);
+}
 
 
 
@@ -339,17 +348,48 @@ article:nth-of-type(2).pricelist__container__article {
    line-height: 40px;
 }
 
-/*............................HOOVER PRICELIST EFFECTS................*/
+/*...................................................HOOVER PRICELIST EFFECTS................*/
+
+
+
 
 .pricelist__container__article:hover {
    background-color: rgb(39, 199, 171) ;
    border-color: rgb(39, 199, 171) ;
+   cursor: pointer;
+
 
 }
 
 .pricelist__container__article:hover .pricelist__container__article__circle {
-
+   background-color: rgb(249,249,249);
+   box-shadow: 0 0 0 17px rgb(39, 199, 171) inset;
+   border-color: rgb(39, 199, 171);
 }
+
+.pricelist__container__article:hover .pricelist__container__article__price  {
+   background-color: rgb(249,249,249);
+   border-color: rgb(39, 199, 171);
+   color: rgb(39, 199, 171);
+}
+
+.pricelist__container__article:hover a {
+   background-color: rgb(249,249,249);
+   color: rgb(39, 199, 171);
+}
+
+.pricelist__container__article:hover span {
+   color:white;
+}
+
+.pricelist__container__article:hover .pricelist__container__article__description > div {
+   background-color: white;
+}
+
+.pricelist__container__article:hover .pricelist__container__article__description >div:nth-child(2n) {
+   background-color: rgb(241,241,241);
+}
+
 
 
 /*.......................section TITLE..........................*/
