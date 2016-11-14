@@ -41,7 +41,9 @@ section::after {
    color: rgb(39, 199, 171);
 }
 
-
+.hidden {
+   visibility: hidden;
+}
 
 /*HEADER*/
 header, header a {
@@ -76,7 +78,7 @@ nav#menu{
 }
 
 .main__menu__sub {
-   display:none;
+
    position: absolute;
    top: 50px;
    left: 10px;
@@ -105,12 +107,12 @@ nav#menu{
    top: -25px;
 }
 
-#main__menu:hover .main__menu__sub {
-   display:block;
-
-}
 
 /*........................................MENU HOVER EFFECTS...............*/
+
+/*#main__menu:hover .main__menu__sub {
+   visibility: visible;
+}*/
 
 .main__menu__sub a:hover {
    background-color: rgb(39, 199, 171);
@@ -125,6 +127,12 @@ nav#menu{
    overflow: hidden;
 
 }
+
+.displayNone {
+   display: none;
+}
+
+
 
 #slider__image {
    display:block;
@@ -162,6 +170,7 @@ nav#menu{
 #slider__left, #slider__right {
    width: 8%;
    margin-top: 130px;
+   cursor: pointer;
 }
 #slider__left{
    float:left;
@@ -188,6 +197,7 @@ section#chairs > div{
    display:inline-block;
    height: 229px;
    position:relative;
+   cursor: pointer;
 
 }
 
@@ -524,4 +534,25 @@ footer.container {
 }
 #footer__images {
    margin-right: 80px;
+}
+
+/*----------------------------------------ZADANIE Z KALKULATOREM STYLE : */
+
+section.calculator {
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#calc {
+   font-size: 40px;
+   display: block;
+   padding: 30px;
+   border: 1px solid rgb(39, 199,171);
+   border-radius: 15px;
+}
+
+#calc:hover {
+   color: white;
+   background-color: rgb(39, 199,171);
 }

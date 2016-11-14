@@ -19,7 +19,7 @@
 
          <div id='main__menu'>
             <a href=''>O FIRMIE</a>
-            <div class='main__menu__sub'>
+            <div class='main__menu__sub hidden'>
                <div class='triangle'></div>
 
                <a href=''>Aktualności</a>
@@ -28,6 +28,8 @@
             </div>
 
             <a href=''>GALERIA</a>
+
+
             <a href=''>KONTAKT</a>
 
          </div>
@@ -36,24 +38,63 @@
    </header>
 
    <section id='slider'>
-      <div class='container' id='slider__container'>
+      <div class='container'>
 
-         <div id='slider__left'>
-            <a href=' '><h2 class='strong'><</h2></a>
-         </div>
-         <img src='images/black_chair.png' id='slider__image'>
+         <div id='slider__container'>
 
 
-         <div id='slider__text'>
-            <h1>SIT <span class='strong'>ON </span>OUR <span class='strong'>CHAIR</span></h1>
-            <p>
-               Id labore do occaecat labore proident non veniam quis deserunt consequat culpa et.Labore culpa est exercitation velit voluptate nisi Lorem qui sunt adipisicing.
-               Irure elit culpa amet duis excepteur fugiat laboris exercitation velit non laboris commodo Lorem.Elit minim cupidatat culpa sit occaecat aute irure ad labore enim id.
-            </p>
-            <a href=' ' id="slider__text__button">ZOBACZ WIĘCEJ</a>
-         </div>
-         <div id='slider__right'>
-            <a href=' '><h2 class='strong'>></h2></a>
+            <div id='slider__left'>
+               <h2 class='strong'><</h2>
+            </div>
+
+         <article id='slider_1' data-id=1>
+
+            <img src='images/black_chair.png' id='slider__image'>
+
+
+            <div id='slider__text'>
+               <h1>SIT <span class='strong'>ON </span>OUR <span class='strong'>CHAIR</span></h1>
+               <p>
+                  Id labore do occaecat labore proident non veniam quis deserunt consequat culpa et.Labore culpa est exercitation velit voluptate nisi Lorem qui sunt adipisicing.
+                  Irure elit culpa amet duis excepteur fugiat laboris exercitation velit non laboris commodo Lorem.Elit minim cupidatat culpa sit occaecat aute irure ad labore enim id.
+               </p>
+               <a href=' ' id="slider__text__button">ZOBACZ WIĘCEJ</a>
+            </div>
+
+         </article>
+         <article id='slider_2' class='displayNone' data-id=2>
+
+            <img src='images/blue_chair.png' id='slider__image'>
+
+
+            <div id='slider__text'>
+               <h1>SIT <span class='strong'>ON </span>OUR <span class='strong'>CHAIR</span></h1>
+               <p>
+                  BLUE CHAIR
+               </p>
+               <a href=' ' id="slider__text__button">ZOBACZ WIĘCEJ</a>
+            </div>
+
+         </article>
+         <article id='slider_3' class='displayNone' data-id=3>
+
+            <img src='images/orange_chair.png' id='slider__image'>
+
+
+            <div id='slider__text'>
+               <h1>SIT <span class='strong'>ON </span>OUR <span class='strong'>CHAIR</span></h1>
+               <p>
+                  ORANGE CHAIR
+               </p>
+               <a href=' ' id="slider__text__button">ZOBACZ WIĘCEJ</a>
+            </div>
+
+         </article>
+
+            <div id='slider__right'>
+               <h2 class='strong'>></h2>
+            </div>
+
          </div>
 
       </div>
@@ -164,6 +205,15 @@
       </div>
    </section>
 
+<!--
+Nie mogłem sobie poradzić ze skopiowaniem strony z kalkulatorem do mojego htmla, prawdopodobnie jakieś klasy się nadpisywały i wszystlo się rozjeżdżało, zatem zrobiłem link do osobnej strony z kalkulatorem: -->
+
+   <section class='calculator container'>
+
+         <a href='calc.html' id='calc'>MAKE <strong>YOUR</strong> CHAIR</a>
+
+   </section>
+
 
 
    <section id='contact'>
@@ -197,6 +247,11 @@
       </div>
    </section>
 
+
+
+
+
+
    <footer class='container'>
 
       <div class='left' id='footer__copyright'>
@@ -223,4 +278,6 @@
 
 
 </body>
+
+<script type="text/javascript" src='js/app.js'></script>
 </html>
